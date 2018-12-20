@@ -9,9 +9,21 @@ import { SingleAppareilPage } from './single-appareil/single-appareil';
 
 export class AppareilsPage{
 
+    appareilsList = [
+        {
+          name: 'Machine à laver'
+        },
+        {
+          name: 'Télévision'
+        },
+        {
+          name: 'Ordinateur'
+        }
+    ];
+
     constructor(private navCtrl: NavController) {}
 
-  onLoadAppareil(name: string) {
-    this.navCtrl.push(SingleAppareilPage, {appareilName: name});
-  }
+    onLoadAppareil(name: string) {
+      this.navCtrl.push(SingleAppareilPage, {appareilName: name});
+    }
 }
