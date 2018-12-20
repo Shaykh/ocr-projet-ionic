@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AppareilsPage } from '../pages/appareils/appareils';
 import { SingleAppareilPage } from '../pages/appareils/single-appareil/single-appareil';
+import { SettingsPage } from '../pages/settings/settings';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     AppareilsPage,
-    SingleAppareilPage
+    SingleAppareilPage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { SingleAppareilPage } from '../pages/appareils/single-appareil/single-ap
     MyApp,
     HomePage,
     AppareilsPage,
-    SingleAppareilPage
+    SingleAppareilPage,
+    SettingsPage
   ],
   providers: [
     StatusBar,
