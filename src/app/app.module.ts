@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { AppareilsPage } from '../pages/appareils/appareils';
 import { SingleAppareilPage } from '../pages/appareils/single-appareil/single-appareil';
 import { SettingsPage } from '../pages/settings/settings';
+import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SettingsPage } from '../pages/settings/settings';
     HomePage,
     AppareilsPage,
     SingleAppareilPage,
-    SettingsPage
+    SettingsPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { SettingsPage } from '../pages/settings/settings';
     HomePage,
     AppareilsPage,
     SingleAppareilPage,
-    SettingsPage
+    SettingsPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
