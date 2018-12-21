@@ -16,10 +16,18 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <button ion-button full color="danger">Éteindre</button>
+        <button ion-button 
+          (click)="onToggleAppareil()"
+          full 
+          [disabled]="!appareil.isOn"
+          color="danger">Éteindre</button>
       </ion-col>
       <ion-col>
-        <button ion-button full color="secondary">Allumer</button>
+        <button ion-button 
+          (click)="onToggleAppareil()"
+          full 
+          [disabled]="appareil.isOn"
+          color="secondary">Allumer</button>
       </ion-col>
     </ion-row>
   </ion-grid>
