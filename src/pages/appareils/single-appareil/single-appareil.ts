@@ -16,8 +16,8 @@ export class SingleAppareilPage implements OnInit {
   constructor(public navParams: NavParams) {
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this.appareil = this.navParams.get('appareil');
- }
+  }
 
 }
