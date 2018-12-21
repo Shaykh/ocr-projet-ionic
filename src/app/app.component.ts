@@ -18,5 +18,9 @@ export class MyApp {
       splashScreen.hide();
     });
   }
+
+  onNavigate(tabsPage) {
+    
+  }
 }
 
