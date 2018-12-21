@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavParams, AlertController } from 'ionic-angular';
+import { NavParams, AlertController, MenuController } from 'ionic-angular';
 
 /**
  * Generated class for the SettingsPage page.
@@ -14,10 +14,12 @@ import { NavParams, AlertController } from 'ionic-angular';
 })
 export class SettingsPage {
 
-  constructor(public alertCtrl: AlertController, public navParams: NavParams) {
+  constructor(public alertCtrl: AlertController,
+    public navParams: NavParams,
+    private menuCtrl: MenuController) {
   }
 
-  onToggleLights(){
+  onToggleLights() {
     let alert = this.alertCtrl.create({
       title: 'Êtes-vous certain(e) de vouloir continuer?',
       subTitle: 'Cette action allumera ou éteindra toutes les lumières de la maison !',
@@ -36,4 +38,7 @@ export class SettingsPage {
     alert.present();
   }
 
+  onToggleMenu() {
+    this.menuCtrl.open();
+  }
 }
