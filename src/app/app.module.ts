@@ -1,3 +1,4 @@
+import { AuthPage } from './../pages/auth/auth';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -5,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { AppareilsService } from './../services/appareils.service';
+import { AuthService } from './../services/auth.service';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -24,7 +26,8 @@ import { OptionsPage } from '../pages/options/options';
     SettingsPage,
     TabsPage,
     OptionsPage,
-    AppareilFormPage
+    AppareilFormPage,
+    AuthPage
   ],
   imports: [
     BrowserModule,
@@ -39,10 +42,12 @@ import { OptionsPage } from '../pages/options/options';
     SettingsPage,
     TabsPage,
     OptionsPage,
-    AppareilFormPage
+    AppareilFormPage,
+    AuthPage
   ],
   providers: [
     AppareilsService,
+    AuthService,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
